@@ -1,0 +1,27 @@
+# .gitignore for RQCalc-test
+
+# Ignore all binary files
+*.bin
+*.exe
+*.dll
+
+# Ignore build artifacts
+build/
+out/
+
+# Ignore IDE files and folders
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore large data files
+*.csv
+*.dat
+*.json
+
+# Handle Git LFS for certain file types
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+*.zip filter=lfs diff=lfs merge=lfs -text
+*.tar.gz filter=lfs diff=lfs merge=lfs -text
+*.tar.bz2 filter=lfs diff=lfs merge=lfs -text
